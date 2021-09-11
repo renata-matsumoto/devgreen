@@ -1,3 +1,9 @@
+
+*{
+    margin: 0px;
+};
+
+
 .navbar .nav-link {
     color: black;
 }
@@ -21,3 +27,4 @@
     color:black;
     height: 60px;
 }
+
