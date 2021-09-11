@@ -1,112 +1,109 @@
+/* RESET MARGIN */
+.container-fluid {
+    width:100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto; }
 
-*{
-    margin: 0px;
-};
-
-
+/* NAVBAR */
 .navbar .nav-link {
-    color: black;
+  color: black;
 }
 
 .navbar .nav-link:hover a,
-.navbar .nav-link:focus a{
-    color: red;
-    text-decoration: none;
+.navbar .nav-link:focus a {
+  color: red;
+  text-decoration: none;
 }
 
-
-.section1 .bloco1{
-    background-color: red;
-    height: 380px;
+.section1 .bloco1 {
+  background-color: red;
+  height: 380px;
 }
 
-.section1 .bloco1 .text-center{
-    color: #dddddd;
-    padding: 35px;
+.section1 .bloco1 .text-center {
+  color: #dddddd;
+  padding: 35px;
 }
 
 /* botão Saiba mais */
-.section1 .botao{
-   
-    display: flex;
-    flex-direction: row;
-
+.section1 .botao {
+  display: flex;
+  flex-direction: row;
 }
 
 /* carrosel */
-.section1 .bloco2{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 176px;
-    margin-top: 20px;
+.section1 .bloco2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 176px;
+  margin-top: 20px;
 }
 
-.section1 .bloco3{
-    background-color: white;
-    width: 520px;
+.section1 .bloco3 {
+  background-color: white;
+  width: 520px;
 }
 
 /* segunda parte do body*/
-.section1 .bloco4{
-    background-color: #dddddd;
-    height: 300px;
+.section1 .bloco4 {
+  background-color: #dddddd;
+  height: 300px;
 }
-
 
 /* TELA DE CADASTRO */
-#banner-cadastro{
- display: flex;
- flex-direction: row;
- width: 100%;
+#banner-cadastro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-#banner-texto{
-    display: flex;
-    flex-direction: column;
-    padding-left: 5rem;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+#banner-texto {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
 }
 
-#banner-cadastro img{
-    margin-left: 20rem;
+#banner-cadastro img {
+  margin-left: 20rem;
 }
 
-#texto-banner-cadastro{
-    font-size: 5rem;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 12rem;
+#texto-banner-cadastro {
+  font-size: 5rem;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 12rem;
 }
 
-#form{
-    padding-top: 5%;
-    display: flex;
-    justify-content: center;
-    background-color: #DDDDDD;
+#form {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  background-color: #dddddd;
 }
 
-#form form div input{
-    width: 350px;
+#form form div input {
+  width: 350px;
 }
 
-#botao{
-    display: flex;
-    justify-content: center;
+#botao {
+  display: flex;
+  justify-content: center;
 }
-
-.section1 .bloco4 .text-center{
-    padding-top: 25px;
+.section1 .bloco4 .text-center {
+  padding-top: 25px;
 }
 
 /* botão 2 - Saiba Mais */
-.section1 .botao2{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
+.section1 .botao2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 /* Google Maps */
@@ -151,51 +148,51 @@
 
 /* Estilização botão Top */
 #topBtn {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    box-shadow: 0px 3px 10px 1px rgb(59, 57, 55);
-    opacity: 80%;
-    cursor: pointer;
-    padding: 2px 5.5px 2px 5.5px;
-    border-radius: 10px;
-    background-color: #dcc3b5;
-    color: rgb(68, 30, 19);
-    transition: 500ms ease-in-out ;
-} 
-#topBtn:hover{
-    background: #6d2717;
-    color: #dcceb5;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  box-shadow: 0px 3px 10px 1px rgb(59, 57, 55);
+  opacity: 80%;
+  cursor: pointer;
+  padding: 2px 5.5px 2px 5.5px;
+  border-radius: 10px;
+  background-color: #dcc3b5;
+  color: rgb(68, 30, 19);
+  transition: 500ms ease-in-out;
+}
+#topBtn:hover {
+  background: #6d2717;
+  color: #dcceb5;
 }
 /* FIM botão top  */
 
 
 /* Footer */
-.footer1{
-    background-color: red;
-    color:black;
-    height: 150px;
+.footer1 {
+  background-color: red;
+  color: black;
+  height: 150px;
 }
+
 .footer2{
     background-color: red;
     color:black;
     height: 10vh;
-}
-.footer1 img{
-    float: right;
-    height: 50px;  
-    margin: 10px;
+
+.footer1 img {
+  float: right;
+  height: 50px;
+  margin: 10px;
 }
 
-.footer1 .texto2{
-    align-items: flex-end;
-    color: #333333;
-    display: flex;
-    height: 150px;
-   justify-content: center;
-    /* background-color: whitesmoke; */
+.footer1 .texto2 {
+  align-items: flex-end;
+  color: #333333;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  /* background-color: whitesmoke; */
 }
-
