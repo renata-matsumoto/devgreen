@@ -98,7 +98,6 @@
   display: flex;
   justify-content: center;
 }
-
 .section1 .bloco4 .text-center {
   padding-top: 25px;
 }
@@ -117,6 +116,38 @@
     width: 100%;
  
   }
+
+/* Estilização conteúdo página informativo */
+
+#mainContent{
+    background: linear-gradient(to bottom, white 10% , rgb(227, 233, 219)20%, rgb(236, 242, 228)90%, white 99%); 
+}p
+
+#nav-tab{
+    backdrop-filter: blur(2px);
+} 
+#nav-tab a:active{
+    background-color: #916f67;
+}
+
+#nav-tab a{
+    font-weight: 500;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333333;
+    font-variant: small-caps;
+}
+#nav-tab a:hover{
+    color: #6d2717;
+}
+.card{
+    background-color: rgba(127, 255, 212, 0.207) !important;
+    border: 2px dashed black !important;
+    box-shadow: 0px 0px 15px 1px rgb(197, 123, 123);
+}
+.card-text{
+    font-size: 80%;
+}
 
 /* Estilização botão Top */
 #topBtn {
@@ -148,6 +179,11 @@
   color: black;
   height: 150px;
 }
+
+.footer2{
+    background-color: red;
+    color:black;
+    height: 10vh;
 
 .footer1 img {
   float: right;
