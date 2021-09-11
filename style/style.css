@@ -1,0 +1,23 @@
+.navbar .nav-link {
+    color: black;
+}
+
+.navbar .nav-link:hover a,
+.navbar .nav-link:focus a{
+    color: red;
+    text-decoration: none;
+}
+
+
+.section1 .bloco1{
+    background-color: red;
+    height: 200px;
+
+}
+
+/* Footer */
+.footer1{
+    background-color: red;
+    color:black;
+    height: 60px;
+}
