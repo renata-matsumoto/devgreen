@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+};
+
+
+
+#banner-cadastro{
+    display: flex;
+    flex-direction: row;
+    float: right;
+};
+
+#texto-banner-cadastro{
+    font-size: 45px;
+    font-style: italic,
+};
