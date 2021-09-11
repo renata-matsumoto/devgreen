@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Cadastro</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <!-- Navbar-->
+        <nav class="navbar navbar-expande-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Grupo Petrópolis
+            </a>
+            
+                <a class="nav-link" href="#" text-dark>GANHE PONTOS</a>
+                <a class="nav-link" href="#" text-dark>PONTOS DE ENTREGA</a>
+                <a class="nav-link" href="#" text-dark>TROQUE SEUS PONTOS</a>
+                <a class="nav-link" href="#" text-dark>INFORMATIVO</a>
+            
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-danger">
+                    <input type="radio" name="cadastrar" id="cadastrar"> Cadastrar
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <div style="background-color: #cc2222;" id="banner-cadastro">
+            <div id="banner-texto">
+            <p id="texto-banner-cadastro">Faça seu Cadastro!</p>
+            <p>Se cadastre e comece a juntar nossas embalagens!</p>
+            </div>
+            <img class="img-fluid" src="../images/cadastro.gif">
+    </div>
+
+    <div id="form" >
+    <form>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome">
+        </div>
+        <div class="mb-3">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf">
+        </div>
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Celular</label>
+            <input type="text" class="form-control" id="telefone">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="cep">
+        </div>
+        <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="endereco">
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="senha">
+        </div>
+        <div id="botao">
+        <button type="button" class="btn btn-outline-dark">Cadastrar</button>
+        </div>
+        <br><br><br>
+    </div>
+    </form>
+
+
+
+    
+</body>
+
+
+
+
+<!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+        <script src="script.js"></script>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+       <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCGx39LTFNQCluoR7kTe91UluHLXtrNE4s",
+          authDomain: "greendev-214ed.firebaseapp.com",
+          projectId: "greendev-214ed",
+          storageBucket: "greendev-214ed.appspot.com",
+          messagingSenderId: "841409381534",
+          appId: "1:841409381534:web:6047037a91635f802da78f"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</html>
