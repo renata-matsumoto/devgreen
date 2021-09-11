@@ -1,16 +1,30 @@
+
 *{
     margin: 0px;
 };
 
 
+.navbar .nav-link {
+    color: black;
+}
 
-#banner-cadastro{
-    display: flex;
-    flex-direction: row;
-    float: right;
-};
+.navbar .nav-link:hover a,
+.navbar .nav-link:focus a{
+    color: red;
+    text-decoration: none;
+}
 
-#texto-banner-cadastro{
-    font-size: 45px;
-    font-style: italic,
-};
+
+.section1 .bloco1{
+    background-color: red;
+    height: 200px;
+
+}
+
+/* Footer */
+.footer1{
+    background-color: red;
+    color:black;
+    height: 60px;
+}
+
