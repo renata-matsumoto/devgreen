@@ -54,6 +54,53 @@
     height: 300px;
 }
 
+
+/* TELA DE CADASTRO */
+#banner-cadastro{
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+}
+
+#banner-texto{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+#banner-cadastro img{
+    margin-left: 20rem;
+}
+
+#texto-banner-cadastro{
+    font-size: 5rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 12rem;
+}
+
+#form{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #DDDDDD;
+}
+
+#form form div input{
+    width: 350px;
+}
+
+#botao{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 .section1 .bloco4 .text-center{
     padding-top: 25px;
 }
@@ -64,6 +111,7 @@
     flex-direction: row;
     margin-top: 20px;
 }
+
 
 
 /* Footer */
