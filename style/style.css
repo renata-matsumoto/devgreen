@@ -184,8 +184,9 @@
     background-color: red;
     color:black;
     height: 10vh;
+}
 
-.footer1 img {
+.footer1 img  {
   float: right;
   height: 50px;
   margin: 10px;
