@@ -112,6 +112,13 @@
     margin-top: 20px;
 }
 
+/* Google Maps */
+
+#map {
+    height: 400px;
+    width: 100%;
+ 
+  }
 
 /* Estilização botão Top */
 #topBtn {
