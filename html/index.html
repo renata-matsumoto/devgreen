@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="pt">
 
 <head>
@@ -18,6 +18,21 @@
 </head>
 
 <body>
+
+        <header class="header">
+            <!-- Navbar-->
+            <nav class="navbar navbar-expande-lg navbar-light bg-light">
+
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Grupo Petrópolis
+                </a>
+                
+                    <a class="nav-link" href="#" text-dark>GANHE PONTOS</a>
+                    <a class="nav-link" href="#" text-dark>PONTOS DE ENTREGA</a>
+                    <a class="nav-link" href="#" text-dark>TROQUE SEUS PONTOS</a>
+                    <a class="nav-link" href="#" text-dark>INFORMATIVO</a>
+                
 
 
 
@@ -130,11 +145,32 @@
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
         </div>
+
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-</body>
+</body
+       <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCGx39LTFNQCluoR7kTe91UluHLXtrNE4s",
+          authDomain: "greendev-214ed.firebaseapp.com",
+          projectId: "greendev-214ed",
+          storageBucket: "greendev-214ed.appspot.com",
+          messagingSenderId: "841409381534",
+          appId: "1:841409381534:web:6047037a91635f802da78f"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+    </body>
 
 </html>

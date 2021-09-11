@@ -1,3 +1,9 @@
+
+*{
+    margin: 0px;
+};
+
+
 .navbar .nav-link {
     color: black;
 }
@@ -73,6 +79,7 @@
     margin: 10px;
 }
 
+
 .footer1 .texto2{
     align-items: flex-end;
     color: #333333;
@@ -81,3 +88,4 @@
    justify-content: center;
     /* background-color: whitesmoke; */
 }
+
