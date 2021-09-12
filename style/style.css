@@ -52,12 +52,22 @@
 /* segunda parte do body*/
 .section1 .bloco4 {
   background-color: #dddddd;
-  height: 300px;
+  width: 100%;
+}
+
+.section1 .bloco4 .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+  /* overflow-x: auto;
+  white-space: nowrap; */
+  
 }
 
 .section1 .bloco5 {
   background-color: #cc2222;
-  height: 300px;
+  
 }
 /* TELA DE CADASTRO */
 #banner-cadastro {
