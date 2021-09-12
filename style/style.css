@@ -397,6 +397,15 @@
     text-align: center;
 }
 
+.cadastroColeta{
+    background-color: #cc2222;
+    border: 0px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    /* color: white; */
+    color: black;
+}
+
 /* Footer */
 .footer1 {
   background-color: #cc2222;
