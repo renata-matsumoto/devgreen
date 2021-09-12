@@ -380,6 +380,24 @@
     margin-bottom: 5%;
 }
 
+/* FIM TELA CATÁLOGO */
+
+/* DASHBOARD */
+#valor{
+    font-size: 100px;  
+}
+
+.banner-dashboard{
+    text-align: center;
+}
+
+.main-dashboard{
+    background-color: #dddddd;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
 /* Footer */
 footer section {
   height:100px;
