@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,19 @@
     <title>Cadastro</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
+    <!--Bootstrap Icons (necessario para o botao TOP)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <!-- Navbar-->
@@ -28,60 +37,112 @@
             <a class="nav-link" href="informativo.html" text-dark>INFORMATIVO</a>
 
             <h4><a href="../html/cadastro.html">
-                <span class="badge badge-pill badge-danger">
-                       Cadastrar
-                </span>
-            </a></h4>
+                    <span class="badge badge-pill badge-danger">
+                        Cadastrar
+                    </span>
+                </a></h4>
         </nav>
     </header>
 
-    <div style="background-color: #cc2222;" id="banner-cadastro">
-            <div id="banner-texto">
-            <p id="texto-banner-cadastro">Entre ou Cadastre-se</p>
-            <p>Para começar a juntar embalagens e ganhar!</p>
+    <div style="background-color: #cc2222;" id="banner-cadastro" class="justify-content-around">
+        <div id="banner-texto">
+            <p id="texto-banner-cadastro" class="text-nowrap">Entre ou</p>
+            <p class="text-nowrap display-2 mb-5">Cadastre-se</p>
+            <p class="mt-3">Para começar a juntar embalagens e ganhar!</p>
+        </div>
+        <img class="img-fluid d-none d-sm-none d-md-block" src="../images/cadastro.gif">
+    </div>
+
+    <ul class="nav nav-pills mb-3 d-flex justify-content-evenly" id="pills-tab" role="tablist">
+        <li class="nav-item btn btn-secondary">
+            <a class="nav-link active btn btn-secondary" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+        </li>
+        <li class="nav-item btn btn-secondary">
+            <a class="nav-link btn btn-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                role="tab" aria-controls="pills-profile" aria-selected="false">Cadastro</a>
+        </li>
+    </ul>
+    <div class="tab-content mb-5" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <form id="formLogin" class="d-flex flex-column px-5 pt-5">
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" class="form-control" id="cpf">
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha">
+                </div>
+                <div class="mt-3 d-flex justify-content-center">
+                    <button type="button" class="btn btn-dark mr-4">Entrar</button>
+                    <button type="reset" class="btn btn-warning">Limpar Campos</button>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <form id="form" class="d-flex flex-column px-5 ">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" class="form-control" id="cpf">
+                </div>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="telefone">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep">
+                </div>
+                <div class="mb-3">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="endereco">
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha">
+                </div>
+                <div class="mt-3 d-flex justify-content-center">
+                    <button type="button" class="btn btn-dark mr-4" data-toggle="modal"
+                        data-target="#exampleModal">Cadastrar</button>
+                    <button type="reset" class="btn btn-warning">Limpar Campos</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- modal  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enviado</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Seus dados foram enviados com sucesso!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                </div>
             </div>
-            <img class="img-fluid" src="../images/cadastro.gif">
+        </div>
     </div>
+    <!-- FIM modal  -->
 
-    <div id="form" >
-    <form>
-        <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome">
-        </div>
-        <div class="mb-3">
-            <label for="cpf" class="form-label">CPF</label>
-            <input type="text" class="form-control" id="cpf">
-        </div>
-        <div class="mb-3">
-            <label for="telefone" class="form-label">Celular</label>
-            <input type="text" class="form-control" id="telefone">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email">
-        </div>
-        <div class="mb-3">
-            <label for="cep" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="cep">
-        </div>
-        <div class="mb-3">
-            <label for="endereco" class="form-label">Endereço</label>
-            <input type="text" class="form-control" id="endereco">
-        </div>
-        <div class="mb-3">
-            <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha">
-        </div>
-        <div id="botao">
-        <button type="button" class="btn btn-outline-dark">Cadastrar</button>
-        </div>
-        <br><br><br>
-    </div>
-    </form>
-
-     <!-- Footer -->
-     <footer class=" container-fluid">
+    <!-- Footer -->
+    <footer class=" container-fluid">
         <section>
             <div class="footer1">
                 <a href="https://web.facebook.com/grupo.petropolis?_rdc=1&_rdr"><img src="../images/facebook1.png"
@@ -101,52 +162,52 @@
         </section>
     </footer>
 
-    
+    <!-- Botao Top -->
+    <a href="#" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
+    <!-- FIM Botao Top -->
 </body>
 
-
-
-
 <!-- JavaScript (Opcional) -->
-        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script>
-        <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+<script src="../script.js"></script>
 
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-                <div class="vw-plugin-top-wrapper"></div>
-            </div>
-        </div>
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
-       <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyCGx39LTFNQCluoR7kTe91UluHLXtrNE4s",
-          authDomain: "greendev-214ed.firebaseapp.com",
-          projectId: "greendev-214ed",
-          storageBucket: "greendev-214ed.appspot.com",
-          messagingSenderId: "841409381534",
-          appId: "1:841409381534:web:6047037a91635f802da78f"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-      </script>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCGx39LTFNQCluoR7kTe91UluHLXtrNE4s",
+        authDomain: "greendev-214ed.firebaseapp.com",
+        projectId: "greendev-214ed",
+        storageBucket: "greendev-214ed.appspot.com",
+        messagingSenderId: "841409381534",
+        appId: "1:841409381534:web:6047037a91635f802da78f"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
+
 </html>
