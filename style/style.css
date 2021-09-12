@@ -399,10 +399,14 @@
 }
 
 /* Footer */
+footer {
+  background-color: rgb(233, 231, 231);
+  border-top: 4px groove #bbb3b1;
+  border-bottom: 4px groove #bbb3b1;
+}
+
 footer section {
   height:100px;
-  border: dotted blue;
-  background-color: red;
   display: flex;
   justify-content: space-between;
 }
@@ -411,15 +415,14 @@ footer section {
   float: right;
   height: 50px;
   margin: 10px;
+  filter: invert(1);
 }
 
-.creditos {
-  display:flex;
-  justify-content: space-between;
+.footer1 img, .footer2 img {
+  float: right;
+  height: 50px;
+  margin: 10px;
 }
-
-
-
 
 .footer1 {
   background-color: #cc2222;
