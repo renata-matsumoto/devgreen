@@ -21,12 +21,13 @@
 
 .section1 .bloco1 {
   background-color: #cc2222;
-  height: 380px;
+ 
 }
 
 .section1 .bloco1 .text-center {
   color: #dddddd;
   padding: 35px;
+ 
 }
 
 /* botão Saiba mais */
@@ -37,11 +38,14 @@
 
 /* carrosel */
 .section1 .bloco2 {
-  display: flex;
+   display: flex; 
   flex-direction: row;
   justify-content: center;
-  height: 200px;
-  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  /* margin-top: 20px; */
+  background-color: white; 
+
 }
 
 .section1 .bloco3 {
