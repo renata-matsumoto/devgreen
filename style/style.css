@@ -10,6 +10,7 @@
 /* NAVBAR */
 .navbar .nav-link {
   color: black;
+  font-weight: 500;
 }
 
 .navbar .nav-link:hover a,
@@ -380,33 +381,37 @@
 }
 
 /* Footer */
-.footer1 {
-  background-color: #cc2222;
-  color: black;
-  height: 150px;
+footer section {
+  height:100px;
+  border: dotted blue;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer2{
-    background-color: #cc2222;
-    color:black;
-    height: 10vh;
-}
-
-.footer1 img {
+.redes-sociais img {
   float: right;
   height: 50px;
   margin: 10px;
 }
 
-.footer1 {
-  align-items: flex-end;
-  color: aliceblue;
-  display: flex;
-  height: 150px;
-  justify-content: center;
-  /* background-color: whitesmoke; */
+.creditos {
+  display:flex;
+  justify-content: space-between;
 }
 
-.texto2{
-  color: a;
+
+
+
+.footer1 {
+  background-color: #cc2222;
+  color: black;
+  height: 150px;
 }
+.footer2{
+    background-color: #cc2222;
+    color:black;
+    height: 150px;
+}
+
+
