@@ -254,12 +254,14 @@
     ;
 }
 .card-text{
-    font-size: 80%;
+    font-size: 0.8rem;
+    text-shadow: 0 0 3px #c4cace;
+    
 }
 
 .card :hover{
     transition: .5s;
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
 /* Estilização botão Top */
