@@ -370,11 +370,15 @@
   margin: 10px;
 }
 
-.footer1 .texto2 {
+.footer1 {
   align-items: flex-end;
   color: aliceblue;
   display: flex;
   height: 150px;
   justify-content: center;
   /* background-color: whitesmoke; */
+}
+
+.texto2{
+  color: a;
 }
