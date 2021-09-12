@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Troque seus pontos!</title>
-           <!-- Bootstrap CSS -->
-           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-           
-           <link rel="stylesheet" href="../style/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
@@ -36,6 +36,54 @@
         </nav>
     </header>
 
+    <main class="container-fluid">
+        <div style="background-color: #cc2222;" id="banner-cadastro" class="container-fluid">
+            <img class="d-block" src="../images/gif-catalogo.gif">
+            <div class="col">
+                <div id="banner-texto" class="col-md-12 col-sm-4">
+                    <p id="texto-banner-cadastro">Troque seus pontos!</p>
+                    <p>Escolha abaixo algum de nossos incríveis produtos para a troca!</p>
+                    <p>As 3 pessoas que mais acumularem pontos durante o ano também recebem prêmios especiais!</p>
+                </div>
+            </div>
+        </div>
+        
+    <div class="catalogo-Premios">
+        <p class="titulo-premios">PRÊMIOS DO ANO</p>
+            <br><br>
+    
+        <div class="bodyPremios">
+            <div class="containerPremios">
+                <div class="box">
+                    <h2 class="name">1° lugar</h2>
+                    <p class="premio">Frigobar Itaipava</p>
+                    <div class="circle"></div>
+                    <img src="../images/premio1lugar.png" class="product">
+                </div>
+        
+                <div class="box">
+                    <h2 class="name">2° lugar</h2>
+                    <p class="premio">Barril 5l Petra</p>
+                    <div class="circle"></div>
+                    <img src="../images/premio2lugar.png" class="product">
+                </div>
+        
+                <div class="box">
+                    <h2 class="name">3° lugar</h2>
+                    <p class="premio">Combo Nordka + TNT</p>
+                    <div class="circle"></div>
+                    <img src="../images/premio3lugar.png" class="product">
+                </div>
+            </div>
+          </div>
+
+    </div>
+
+    
+    
+    </main>
+
+
 
      <!-- Footer -->
      <footer class=" container-fluid">
@@ -57,6 +105,27 @@
 
         </section>
     </footer>
-    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+
+    <script src="../vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+	});
+    </script>
+  
 </body>
 </html>
