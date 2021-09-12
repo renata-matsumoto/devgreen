@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Troque seus pontos!</title>
-           <!-- Bootstrap CSS -->
-           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-           
-           <link rel="stylesheet" href="../style/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header>
@@ -37,6 +37,671 @@
         </nav>
     </header>
 
+    <main class="container-fluid">
+        <div style="background-color: #cc2222;" id="banner-cadastro" class="container-fluid">
+            <img class="d-block" src="../images/gif-catalogo.gif">
+            <div class="col">
+                <div id="banner-texto" class="col-md-12 col-sm-4">
+                    <p id="texto-banner-cadastro">Troque seus pontos!</p>
+                    <p>Escolha abaixo algum de nossos incríveis produtos para a troca!</p>
+                    <p>As 3 pessoas que mais acumularem pontos durante o ano também recebem prêmios especiais!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="catalogo-Premios">
+            <p class="titulo-premios">PRÊMIOS DO ANO</p>
+                <br><br>
+        
+            <div class="bodyPremios">
+                <div class="containerPremios">
+                    <div class="box">
+                        <h2 class="name">1° lugar</h2>
+                        <p class="premio">Frigobar Itaipava</p>
+                        <div class="circle"></div>
+                        <img src="../images/premio1lugar.png" class="product">
+                    </div>
+            
+                    <div class="box">
+                        <h2 class="name">2° lugar</h2>
+                        <p class="premio">Barril 5l Petra</p>
+                        <div class="circle"></div>
+                        <img src="../images/premio2lugar.png" class="product">
+                    </div>
+            
+                    <div class="box">
+                        <h2 class="name">3° lugar</h2>
+                        <p class="premio">Combo Nordka + TNT</p>
+                        <div class="circle"></div>
+                        <img src="../images/premio3lugar.png" class="product">
+                    </div>
+                </div>
+            </div>
+            <!-- RANKING -->
+            <div class="ranking">
+                <p>Confira abaixo o ranking atualizado dos 10 maiores colaboradores!</p>
+                <table class="table table-striped table-danger table-hover tabela">
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</td>
+                        <th>Pontos</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>1</th>
+                        <td>Teresa S.</td>
+                        <td>25.600</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Paulo P.</td>
+                        <td>23.450</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Juana P.</td>
+                        <td>21.070</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Renata M.</td>
+                        <td>19.000</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Daniel D.</td>
+                        <td>18.765</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Bruna D.</td>
+                        <td>15.320</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Carlos P.</td>
+                        <td>15.300</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>Marcus S.</td>
+                        <td>13.050</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Erich S.</td>
+                        <td>12.750</td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Vanessa P.</td>
+                        <td>11.890</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+
+        <!-- LISTA DE PRODUTOS -->
+        <div class="row linhaProdutos" style="margin-top: 5%;">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/2.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/3.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/5.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/7.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/8.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/9.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/10.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/11.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/12.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/13.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/14.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/15.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/16.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/17.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/18.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/19.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/20.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/21.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/22.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/23.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/24.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/25.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/26.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/27.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/28.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/29.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/30.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/31.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/32.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/33.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/34.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/35.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/36.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/37.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/38.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/39.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/40.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/41.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/42.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/43.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/44.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/45.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/46.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/47.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/48.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/49.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/50.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/51.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/52.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/53.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/54.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/55.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/56.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/57.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/58.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/59.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/60.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/61.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/62.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/63.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/64.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/65.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row linhaProdutos">
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/66.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> pontos</h5>
+                  <a href="#" style="text-align: center;" class="btn btn-outline-danger"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/67.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/68.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+              <div class="card text-center" style="width: 18rem;">
+                <img class="card-img-top" src="../images/fotos - portfolio/69.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> pontos</h5>
+                    <a href="#" style="text-align: center;" class="btn btn-outline-danger""><i class="bi bi-cart-plus"></i></a>
+                </div>
+              </div>
+              
+            
+        </div>
+
+    
+    
+    </main>
+
+
 
      <!-- Footer -->
      <footer class=" container-fluid">
@@ -58,6 +723,27 @@
 
         </section>
     </footer>
-    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+
+    <script src="../vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+	});
+    </script>
+  
 </body>
 </html>
