@@ -47,13 +47,89 @@
         </div>
     </div>
 
-    <div class="container main-dashboard">
+    <div class="container-fluid main-dashboard">
         <h3>Solicite sua coleta abaixo!</h3>
         <br>
-        <h5>* Para solicitar sua coleta, você precisa de no mínimo 15 pontos</h5>
+        <h5>* Para solicitar sua coleta, você precisa de no mínimo 10.000 pontos</h5>
+        
+        <div class="container-fluid cadastroColeta">
+            <h6>Digite ou selecione a sua embalagem para adicionar à lista de coleta</h6>
         
 
+        <select multiple class="custom-select custom-select-lg mb-3" id="opcoesEmbalagens">
+            <option selected>Escolha sua embalagem</option>
+            <option value="200">Blue Spirit Ice 275ml</option>
+                <option value="450">Cabaré Fire - Sabor Canela 1L</option>
+                <option value="200">Cabaré Ice Frutas Amarelas 275ml</option>
+                <option value="200">Cabaré Ice Frutas Vermelhas 275ml</option>
+                <option value="200">Cabaré Ice Limão 275ml</option>
+                <option value="450">Cachaça Cabaré Amburana 700Ml</option>
+                <option value="450">Cachaça Cabaré Prata 700Ml</option>
+                <option value="450">Cachaça Extra Premium 15 Anos Cabaré 700Ml</option>
+                <option value="350">Cerveja Ampolis Chilli Peppis 355ml</option>
+                <option value="400">Cerveja Biritis 600ml</option>
+                <option value="350">Cerveja Biritis Sem Filtris 355ml</option>
+                <option value="400">Cerveja Black Princess APA-82 600ml</option>
+                <option value="400">Cerveja Black Princess Back to the Red 600ml</option>
+                <option value="350">Cerveja Black Princess Bohemian Pilsner 355ml</option>
+                <option value="400">Cerveja Black Princess Dark 600ml</option>
+                <option value="400">Cerveja Black Princess Doctor Weiss 600ml</option>
+                <option value="350">Cerveja Black Princess Gold 350ml</option>
+                <option value="350">Cerveja Black Princess Gold 355ml</option>
+                <option value="400">Cerveja Black Princess Let's Hop 600ml</option>
+                <option value="400">Cerveja Black Princess Tião Bock 600ml</option>
+                <option value="350">Cerveja Blondine Bad Moose 300mL</option>
+                <option value="350">Cerveja Blondine Felina Pale Ale 350mL</option>
+                <option value="350">Cerveja Blondine Horny Pig 350mL</option>
+                <option value="350">Cerveja Blondine Jackpot 350mL</option>
+                <option value="350">Cerveja Blondine Royal ESB 300mL</option>
+                <option value="350">Cerveja Blondine Sunny Wheat 350mL</option>
+                <option value="350">Cerveja Blondine Volcano 300mL</option>
+                <option value="350">Cerveja Blondine Witibier Acerola 300mL</option>
+                <option value="350">Cerveja Cacildis 350ml</option>
+                <option value="350">Cerveja Cacildis 355ml</option>
+                <option value="400">Cerveja Cacildis 600ml</option>
+                <option value="350">Cerveja Ditriguis 355ml</option>
+                <option value="400">Cerveja Imperatriz Hoppy Lager 473ml</option>
+                <option value="350">Cerveja Itaipava Go Draft 355ml</option>
+                <option value="350">Cerveja Itaipava Premium Puro Malte 350ml</option>
+                <option value="350">Cerveja Itaipava Premium Puro Malte 355ml</option>
+                <option value="400">Cerveja Itaipava Premium Puro Malte 600ml</option>
+                <option value="400">Cerveja Lund APA 600ml</option>
+                <option value="400">Cerveja Lund IPA 600ml</option>
+                <option value="400">Cerveja Lund Pale Ale 600ml</option>
+                <option value="400">Cerveja Petra Aurum 500ml</option>
+                <option value="350">Cerveja Petra Escura 350ml</option>
+                <option value="350">Cerveja Petra Escura 355ml</option>
+                <option value="350">Cerveja Petra Kellerbier 355ml</option>
+                <option value="350">Cerveja Petra Origem Puro Malte 350ml</option>
+                <option value="350">Cerveja Petra Origem Puro Malte 355ml</option>
+                <option value="400">Cerveja Petra Origem Puro Malte 600ml</option>
+                <option value="400">Cerveja Petra Schwarzbier 500ml</option>
+                <option value="400">Cerveja Petra Stark Bier 500ml</option>
+                <option value="400">Cerveja Petra Weiss 500ml</option>
+                <option value="300">Energético TNT Açaí com Guaraná 269ml</option>
+                <option value="300">Energético TNT Maçã verde 269ml</option>
+                <option value="300">Energético TNT Original 269ml</option>
+                <option value="400">Energético TNT Original 473ml</option>
+                <option value="300">Energético TNT Tangerina 269ml</option>
+                <option value="300">Energético TNT Zero Açúcar 269ml</option>
+                <option value="450">Vodka Nordka 1 litro</option>
+        </select>
 
+        <script>
+            var e = document.getElementById("opcoesEmbalagens");
+            var pontos = e.value;
+            document.getElementById(msgpontos).innerHTML = pontos
+        </script>
+
+        
+            <div>Você tem <p id="msgpontos"></p> pontos!</div>
+        
+
+        
+
+     </div>
 
     </div>
 
