@@ -33,38 +33,56 @@
                 <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Grupo Petrópolis
             </a>
+            <a class="nav-link" href="../html/pontos_entrega.html" text-dark>PONTOS DE ENTREGA</a>
+            <a class="nav-link" href="catalogo.html" text-dark>TROQUE SEUS PONTOS</a>
+            <a class="nav-link" href="cadastro-parceiro.html" text-dark>PARCERIAS</a>
+            <a class="nav-link" href="informativo.html" text-dark>INFORMATIVO</a>
 
-            <a class="nav-link" href="#" text-dark>GANHE PONTOS</a>
-            <a class="nav-link" href="#" text-dark>PONTOS DE ENTREGA</a>
-            <a class="nav-link" href="#" text-dark>TROQUE SEUS PONTOS</a>
-            <a class="nav-link" href="#" text-dark>INFORMATIVO</a>
-
-
-    
             <h4><a href="../html/cadastro.html">
-                <span class="badge badge-pill badge-danger">
-                       Cadastrar
-                </span>
-            </a></h4>
+                    <span class="badge badge-pill badge-danger">
+                        Cadastrar
+                    </span>
+                </a></h4>
         </nav>
     </header>
 
     <main class="section1 container-fluid">
-
-        <h3>Encontre Um Ponto de Coleta</h3>
-      
         <div id="map"></div>
-        
+
         <section class="section2">
-            <div>
-               <div class="row-cols-12">
-                
-                <a class="nav-link" href="#" text-dark> <img src="../images/logorecicla.jpg" height="50px" width="50px" alt="">Boituva - Estrada Municipal Batista Favoretti, 350</a>                </a>
-               </div>
+            <h3>Encontre um Ponto de Coleta mais próximo a você:</h3>
+        </section>
+
+        <section class="section2">
+            <div class="card border-light mb-5" style="width: 50rem;">
+                <ul class="list-group list-group-flush" >
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Alagoinhas - Rodovia BR 101, KM 114, s/n - Narandiba - Alagoinhas/BA - <a href="https://goo.gl/maps/WgFXH4XkPuiEdP2f9" class="card-link">Saiba Mais</a> </li> 
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Boituva - Estrada Municipal Batista Favoretti, 350 - Água Branca - Boituva/SP - <a href="https://goo.gl/maps/SkdnU35SuPbQL1jF9" class="card-link">Saiba Mais</a></li>
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Bragança Paulista - AC Bragança Paulista, Km 42, s/n - Biriça - Bragança Paulista/SP - <a href="https://goo.gl/maps/p9dDejQPqqUmNxt37" class="card-link">Saiba Mais</a> </li>
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Itapissuma - Rodovia BR 101, Km 37,5 s/n - Mangabeira - Itapissuma/PE - <a href="https://goo.gl/maps/Fqq6dTXYcEZXa3dq7" class="card-link">Saiba Mais</a> </li>
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Petrópolis - Rua Trajano Paula Filho, 199 - Pedro do Rio - Petrópolis/RJ - <a href="https://goo.gl/maps/53tzkmNkzKLiTrFBA" class="card-link">Saiba Mais</a></li>
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Rondonópolis - Av. Bonifácio Sanchetti, 4.714 - Distrito Industrial Augutuso Bortoli Razia - Rondonópolis/MT - <a href="https://goo.gl/maps/N9VecRFb9jDPkUZ26" class="card-link">Saiba Mais</a></li>
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Teresópolis - Rodovia BR -116, KM 50, s/n - Serra do Capim -  Teresópolis/RJ - <a href="https://goo.gl/maps/Vdoj1eUG1kWUH9Bs6" class="card-link">Saiba Mais</a></li>
+                    <li class="list-group-item"><img src="../images/logorecicla1.png" height="30px" width="30px" alt="logo"> Uberaba - Rodovia BR-050, Km 188, s/n - Área Rural - Uberaba/MG - <a href="https://goo.gl/maps/gqUn3TZRu4Ca6ZHm9" class="card-link">Saiba Mais</a></li>
+                </ul>
+
             </div>
         </section>
-    
-
+     
+        <section class="section3 col-12">
+           
+            <div class="text-center mt-5">
+                <h3 >SOLICITE A SUA COLETA</h3>
+                <p>* Para solicitar sua coleta, você precisa de no mínimo X pontos.</p>
+                <h5>Faça o login ou cadastre-se para solicitar sua coleta</h5>
+                <p><a href="">LEIA NOSSO REGULAMENTO</a></p>
+                <div class="d-flex justify-content-around  pt-5 mb-3" id="banner-buttons">
+                    <button class="btn btn-dark rounded-pill">Entre</button>
+                    <a class="btn btn-dark text-white rounded-pill">Solicitar Coleta</a>
+                </div>
+            </div>           
+        
+        </section>
 
     </main>
     <!-- Footer -->
@@ -100,9 +118,10 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
     <script src="script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjG-4UBeS-OOCnLeCrPUfPSVRSfv1CELA&callback=initMap">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjG-4UBeS-OOCnLeCrPUfPSVRSfv1CELA&callback=initMap">
     </script>
-    	
+
 
 
     <div vw class="enabled">
@@ -118,4 +137,4 @@
     </script>
 </body>
 
-</html> 
+</html>
