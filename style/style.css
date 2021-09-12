@@ -222,7 +222,8 @@
 /* PÁGINA CATÁLOGOS */
 .catalogo-Premios{
     background-color: #dddddd;
-    height: 1000px;
+    /* height: 1000px; */
+    padding-bottom: 30px;
     width: 100%;
     /* display: flex; */
     /* justify-content: center */;
@@ -354,6 +355,21 @@
     background: #cd7f32 ;
 }
 
+.ranking{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.tabela{
+    margin: 0 auto;
+    width: 35%;
+}
+
+.linhaProdutos{
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
 
 /* Footer */
 .footer1 {
