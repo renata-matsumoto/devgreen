@@ -1,5 +1,5 @@
 /* RESET MARGIN */
-.container-fluid {
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width:100%;
     padding-right: 0;
     padding-left: 0;
@@ -16,12 +16,12 @@
 
 .navbar .nav-link:hover a,
 .navbar .nav-link:focus a {
-  color: red;
+  color: #cc2222;
   text-decoration: none;
 }
 
 .section1 .bloco1 {
-  background-color: red;
+  background-color: #cc2222;
   height: 380px;
 }
 
@@ -61,6 +61,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 #banner-texto {
@@ -73,7 +74,7 @@
 }
 
 #banner-cadastro img {
-  margin-left: 20rem;
+  margin-left: 10rem;
 }
 
 #texto-banner-cadastro {
@@ -172,16 +173,151 @@
 }
 /* FIM botão top  */
 
+/* PÁGINA CATÁLOGOS */
+.catalogo-Premios{
+    background-color: #dddddd;
+    height: 1000px;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center */;
+    /* align-items: center; */
+}
+
+.titulo-premios{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 6rem;
+};
+
+.catalogo-Premios .bodyPremios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containerPremios{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
+.containerPremios .box{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+
+}
+
+.containerPremios .box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px); 
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.containerPremios .box:hover .name{
+    top: 20px;
+    opacity: 1;
+}
+
+.containerPremios .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 40px);
+}
+
+.containerPremios .box .premio{
+    width: 300px;
+    position: absolute;
+    bottom: -10;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: black;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.containerPremios .box:hover .premio {
+    bottom: 10px;
+    opacity: 1;
+}
+
+
+.containerPremios .box .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 270px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px) rotate(-15deg);
+}
+
+.containerPremios .box:hover .product{
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+
+.containerPremios .box:nth-child(1) .circle,
+.containerPremios .box:nth-child(1) .premio {
+    background: #9bdc28;
+}
+
+.containerPremios .box:nth-child(2) .circle, 
+.containerPremios .box:nth-child(2) .premio {
+    background: #c4cace;
+}
+
+.containerPremios .box:nth-child(3) .circle, 
+.containerPremios .box:nth-child(3) .premio {
+    background: #cd7f32 ;
+}
+
 
 /* Footer */
 .footer1 {
-  background-color: red;
+  background-color: #cc2222;
   color: black;
   height: 150px;
 }
 
 .footer2{
-    background-color: red;
+    background-color: #cc2222;
     color:black;
     height: 10vh;
 }
