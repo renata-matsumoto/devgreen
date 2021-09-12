@@ -106,6 +106,13 @@
   width: 100%;
 }
 
+.section1 .bloco6 .row .img{
+  display: flex;
+  justify-content:center;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
 .section1 .bloco7 {
   background-color: #cc2222;
   color: antiquewhite;
