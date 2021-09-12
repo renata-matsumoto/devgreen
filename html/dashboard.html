@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar-->
+        <nav class="navbar navbar-expande-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Grupo Petrópolis
+            </a>
+
+            <a class="nav-link" href="#" text-dark>GANHE PONTOS</a>
+            <a class="nav-link" href="pontos_entrega.html" text-dark>PONTOS DE ENTREGA</a>
+            <a class="nav-link" href="catalogo.html" text-dark>TROQUE SEUS PONTOS</a>
+            <a class="nav-link" href="cadastro-parceiro.html" text-dark>PARCERIAS</a>
+            <a class="nav-link" href="informativo.html" text-dark>INFORMATIVO</a>
+
+            <h4><a href="../html/cadastro.html">
+                <span class="badge badge-pill badge-danger">
+                       Minha conta
+                </span>
+            </a></h4>
+        </nav>
+    </header>
+    <!--Conteúdo Principal-->
+    <div style="background-color: #cc2222;" class="container-fluid pt-5 py-2 banner-dashboard">
+        <h2 class="h2 display-4 text-white mb-5 pl-4">Olá, João!</h2>
+        <h3 class="h2 display-4 text-white mb-5 pl-4">Você tem <span id="valor">8926</span> pontos!</h3>
+        <div class="d-flex justify-content-around  pt-5 mb-3" id="banner-buttons">
+            <a class="btn btn-dark text-white rounded-pill" href="catalogo.html">Troque seus pontos</a>
+        </div>
+    </div>
+
+    <div class="container main-dashboard">
+        <h3>Solicite sua coleta abaixo!</h3>
+        <br>
+        <h5>* Para solicitar sua coleta, você precisa de no mínimo 15 pontos</h5>
+        
+
+
+
+    </div>
+
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    <script src="../script.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
