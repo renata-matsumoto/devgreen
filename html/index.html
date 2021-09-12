@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>DevGreen</title>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DevGreen</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
 
-    <body>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
 
-
+<body>
     <header>
         <!-- Navbar-->
-        <nav class="navbar navbar-expande-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
             <a class="navbar-brand" href="index.html">
-                <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Grupo Petrópolis
+                <img src="../images/gpambiental.png" class="img-fluid" width="250px" alt="">
             </a>
-
-            <a class="nav-link" href="#" text-dark>GANHE PONTOS</a>
-            <a class="nav-link" href="pontos_entrega.html" text-dark>PONTOS DE ENTREGA</a>
-            <a class="nav-link" href="catalogo.html" text-dark>TROQUE SEUS PONTOS</a>
-            <a class="nav-link" href="cadastro-parceiro.html" text-dark>PARCERIAS</a>
-            <a class="nav-link" href="informativo.html" text-dark>INFORMATIVO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="#" text-dark>GANHE PONTOS</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="pontos_entrega.html" text-dark>PONTOS DE ENTREGA</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="catalogo.html" text-dark>TROQUE SEUS PONTOS</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="cadastro-parceiro.html" text-dark>PARCERIAS</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="informativo.html" text-dark>INFORMATIVO</a>
+                    </li>
+                </ul>
+            </div>
 
             <h4><a href="../html/cadastro.html">
-                <span class="badge badge-pill badge-danger">
-                       Cadastrar
-                </span>
-            </a></h4>
+                    <span class="badge badge-pill badge-danger">
+                        Cadastrar
+                    </span>
+                </a></h4>
+
         </nav>
 
     </header>
@@ -57,19 +72,16 @@
                 </div>
             </div>
             <div class="bloco2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide bloco3" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide"
-                                alt="Primeiro Slide">
+                            <h3>Item Um</h3>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide"
-                                alt="Segundo Slide">
+                            <h3>Item Dois</h3>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide"
-                                alt="Terceiro Slide">
+                            <h3>Item Tres</h3>
                         </div>
                     </div>
                 </div>
@@ -92,37 +104,36 @@
 
     </main>
     <!-- Footer -->
-    <footer class=" container-fluid">
+    <footer class="container-fluid">
         <section>
-            <div class="footer1">
+            <div class="creditos m-auto">
+                <div class="texto1">
+                    <img src="../images/logo.png" width="45" height="45" class="d-inline align-top" alt="">
+                    <p>Cervejaria Petropolis S/A - CNPJ 73.410.326/0055-53</p>
+                </div>
+            </div>
+            <div class="redes-sociais">
                 <a href="https://web.facebook.com/grupo.petropolis?_rdc=1&_rdr"><img src="../images/facebook1.png"
                         alt="logo do Facebook"></a>
                 <a href="https://www.instagram.com/grupo.petropolis/"><img src="../images/instagram.jpg"
                         alt="logo do Instagram"></a>
                 <a href="https://www.linkedin.com/company/grupo-petropolis/"><img src="../images/lin.png"
                         alt="logo do Linkedin"></a>
-
-                <div class="texto2">
-                    <img src="../images/logo.png" width="45" height="45" class="d-inline-block align-top" alt="">
-                    <p>Cervejaria Petropolis S/A - CNPJ 73.410.326/0055-53</p>
-                </div>
-
             </div>
-
         </section>
     </footer>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="script.js"></script>
 
     <div vw class="enabled">
@@ -130,15 +141,14 @@
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
         </div>
-
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script> -->
+    </script>
 
-   
-       <!-- <script type="module">
+
+    <!-- <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
         // TODO: Add SDKs for Firebase products that you want to use
@@ -156,9 +166,6 @@
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig); -->
-<!--       </script> -->
+    <!--       </script> -->
 
-</body
-
-
-</html>
+</body </html>
