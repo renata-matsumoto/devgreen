@@ -38,13 +38,11 @@
 
 /* carrosel */
 .section1 .bloco2 {
-   display: flex; 
+  display: flex; 
   flex-direction: row;
   justify-content: center;
-  /* height: 280px; */
   width: 100%;
   background-color: white; 
-
 }
 
 .section1 .bloco3 {
@@ -108,11 +106,32 @@
   width: 100%;
 }
 
+.section1 .bloco6 .row .img{
+  display: flex;
+  justify-content:center;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
 .section1 .bloco7 {
   background-color: #cc2222;
   color: antiquewhite;
   width: 100%;
 }
+
+.section1 .bloco7 .row{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+.section1 .bloco7 .botao3{
+  
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
 
 
 
