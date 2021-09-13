@@ -37,6 +37,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item mx-2">
+                            <a class="nav-link" href="programa.html" text-dark>TROQUE E GANHE</a>
+                        </li>
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="pontos_entrega.html" text-dark>PONTOS DE ENTREGA</a>
                         </li>
                         <li class="nav-item mx-2">
@@ -138,16 +141,18 @@
 
             <section class="bloco5">
                 <h4 class="text-center pt-4">Ganhe Pontos<h4>
-                            <div class="row input1 justify-content-center">
-                                <div class="input2">
-                                    <input type="text" class="form-control mb-2 mt-2 mr-sm-2" id="inlineFormInputName2"
-                                        placeholder="Insira seu código de barras">
-                                    <button class="btn btn-dark rounded-pill">OK</button>
-                                </div>
-                                <div class="text-center">
-                                    <img class="img-fluid pt-4 mx-auto" src="../images/Petrópolis/Foto-embalagens-1.png" alt="">
-                                </div>
+                        <div class="row input1 justify-content-center">
+                            <div class="input2">
+                                <input type="text" class="form-control mb-2 mt-2 mr-sm-2" id="inlineFormInputName2"
+                                    placeholder="Insira o nome do produto">
+                                <button type="button" class="btn btn-dark mr-4" data-toggle="modal"
+                                    data-target="#exampleModal">OK</button>
                             </div>
+                            <div class="text-center">
+                                <img class="img-fluid pt-4 mx-auto" src="../images/Petrópolis/Foto-embalagens-1.png"
+                                    alt="">
+                            </div>
+                        </div>
             </section>
 
             <section class="bloco6 px-md-5 py-md-5 justify-content-center">
@@ -192,28 +197,54 @@
         </main>
 
         <!-- Footer -->
-     <footer class="container-fluid pb-3 pt-1">
-        <section class="pl-2">
-            <div class="creditos d-flex justify-content-start pl">
-                <div class="texto1">
-                    <a href="https://www.grupopetropolis.com.br/"><img src="../images/logo.png" width="55" height="55" class="img-fluid align-top" alt=""></a>
-                    <p class="text-dark">Cervejaria Petropolis S/A - CNPJ 73.410.326/0055-53</p>
+        <footer class="container-fluid pb-3 pt-1">
+            <section class="pl-2">
+                <div class="creditos d-flex justify-content-start pl">
+                    <div class="texto1">
+                        <a href="https://www.grupopetropolis.com.br/"><img src="../images/logo.png" width="55"
+                                height="55" class="img-fluid align-top" alt=""></a>
+                        <p class="text-dark">Cervejaria Petropolis S/A - CNPJ 73.410.326/0055-53</p>
+                    </div>
+                </div>
+                 <div class="redes-sociais">
+                    <a href="https://web.facebook.com/grupo.petropolis?_rdc=1&_rdr"><img src="../images/facebook1.png"
+                            alt="logo do Facebook" class="img-fluid"></a>
+                    <a href="https://www.instagram.com/grupo.petropolis/"><img src="../images/instagram.jpg"
+                            alt="logo do Instagram" class="img-fluid"></a>
+                    <a href="https://www.linkedin.com/company/grupo-petropolis/"><img src="../images/lin.png"
+                            alt="logo do Linkedin" class="img-fluid"></a>
+                    </div>
+            </section>
+            <div
+                class="creditos2 d-flex justify-content-start justify-content-sm-center align-content-end mt-5 mt-sm-0 mb-3 mb-sm-0">
+                <span class="pt-1 text-monospace d-none d-sm-inline">Desenvolvido por</span> <a
+                    href="https://github.com/renata-matsumoto/devgreen"><img src="../images/devgreen.png" alt="Devgreen"
+                        width="180"></a>
+            </div>
+        </footer>
+
+        <!-- modal  -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enviado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Cachaça Cabaré Amburana 700 Ml - 2.500 pontos
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                    </div>
                 </div>
             </div>
-            <div class="redes-sociais">
-                <a href="https://web.facebook.com/grupo.petropolis?_rdc=1&_rdr"><img src="../images/facebook1.png"
-                        alt="logo do Facebook" class="img-fluid"></a>
-                <a href="https://www.instagram.com/grupo.petropolis/"><img src="../images/instagram.jpg"
-                        alt="logo do Instagram" class="img-fluid"></a>
-                <a href="https://www.linkedin.com/company/grupo-petropolis/"><img src="../images/lin.png"
-                        alt="logo do Linkedin" class="img-fluid"></a>
-            </div>
-        </section>
-        <div class="creditos2 d-flex justify-content-start justify-content-sm-center align-content-end mt-5 mt-sm-0 mb-3 mb-sm-0">
-            <span class="pt-1 text-monospace d-none d-sm-inline">Desenvolvido por</span> <a href="https://github.com/renata-matsumoto/devgreen"><img src="../images/devgreen.png" alt="Devgreen" width="180"></a>
         </div>
-    </footer>
-    
+        <!-- FIM modal  -->
+
         <!-- Botao Top -->
         <a href="#" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
         <!-- FIM Botao Top -->
