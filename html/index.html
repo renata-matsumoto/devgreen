@@ -37,6 +37,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item mx-2">
+                            <a class="nav-link" href="programa.html" text-dark>TROQUE E GANHE</a>
+                        </li>
+                        <li class="nav-item mx-2">
                             <a class="nav-link" href="pontos_entrega.html" text-dark>PONTOS DE ENTREGA</a>
                         </li>
                         <li class="nav-item mx-2">
@@ -142,7 +145,8 @@
                                 <div class="input2">
                                     <input type="text" class="form-control mb-2 mt-2 mr-sm-2" id="inlineFormInputName2"
                                         placeholder="Insira seu código de barras">
-                                    <button class="btn btn-dark rounded-pill">OK</button>
+                                        <button type="button" class="btn btn-dark mr-4" data-toggle="modal"
+                                        data-target="#exampleModal">OK</button>
                                 </div>
                                 <div class="text-center">
                                     <img class="img-fluid pt-4 mx-auto" src="../images/Petrópolis/Foto-embalagens-1.png" alt="">
@@ -216,6 +220,28 @@
                         width="180"></a>
             </div>
         </footer>
+
+         <!-- modal  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Enviado</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Cachaça Cabaré Amburana 700 Ml - 2.500 pontos
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM modal  -->
         <!-- Botao Top -->
         <a href="#" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
         <!-- FIM Botao Top -->

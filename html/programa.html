@@ -8,9 +8,9 @@
     <title>Cadastro</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../style/style.css">
@@ -18,7 +18,8 @@
         label {
             font-variant: small-caps;
         }
-        body{
+
+        body {
             background-color: #DDDDDD;
         }
     </style>
@@ -39,6 +40,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="programa.html" text-dark>TROQUE E GANHE</a>
+                    </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="pontos_entrega.html" text-dark>PONTOS DE ENTREGA</a>
                     </li>
@@ -63,110 +67,113 @@
         <!-- FIM Navbar  -->
     </header>
 
-    <div style="background-color: #cc2222;" class="container-fluid pt-5 py-2">
-        <h3 class="h3 display-4 text-white mb-5 pl-4">Seja nosso Parceiro do Bem!</h3>
-        <div class="d-flex justify-content-around  pt-5 mb-3" id="banner-buttons">
-            <button class="btn btn-dark rounded-pill">Cadastre-se</button>
-            <a class="btn btn-dark text-white rounded-pill">Solicitar Coleta</a>
+    <div style="background-color: #cc2222;" class="container-fluid pt-2">
+        <h3 class="text-white text-center mb-4 p-4">Programa: Troque e Ganhe!!!</h3>
+
+    </div>
+
+    <div class="bloco2 p-md-5">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="../images/banners/1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="../images/banners/2.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="../images/banners/3.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container-fluid p-3" style="background-color: #DDDDDD;">
 
-        <h4 class="mt-4 ml-4">Cadastre seu estabelecimento e ganhe desconto em produtos!</h4>
+        <h4 class="mt-4 ml-4">Programa Troque e Ganhe!!!</h4>
 
-        <p class="p-4 pt-5 text-justify">Você lojista, revendedor de produtos do Grupo Petrópolis (representando as
-            marcas Crystal, Black Princess, Petra e Weltenburger, energétios TNT Energy Drink e Magneto, isotônico TNT,
-            vodkas Blue Spirit Ice e Nordka, Cabaré Ice e água Petra) pode ser um parceiro de logística reversa e ganhar
-            desconto em produtos!
+        <p class="p-4 pt-5 text-justify">Como Funciona:
         </p>
         <p class="px-4 text-justify">
-            Faça o cadastro abaixo para se inscrever no nosso programa.<br>Ao final, você receberá um e-mail com a
-            confirmação do cadastro e em breve um representante entrará em contato com todas as informações sobre o
-            programa.
+            1 - Faça seu cadastro e junte seus recicláveis.
         </p>
-        <form class="form-group container-fluid px-sm-3 px-lg-5 pt-4" name="formulario">
-            <div class="mb-3">
-                <label for="nome" class="form-label">Nome Completo</label>
-                <input type="text" class="form-control" id="nome">
-            </div>
-            <div class="mb-3">
-                <label for="cpf" class="form-label">CPF</label>
-                <input type="text" class="form-control" id="cpf">
-            </div>
-            <div class="mb-3">
-                <label for="telefone" class="form-label">Telefone</label>
-                <input type="text" class="form-control" id="telefone">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email">
-            </div>
-            <div class="mb-3">
-                <label for="estabelecimento" class="form-label">Nome do Estabelecimento</label>
-                <input type="text" class="form-control" id="estabelecimento" name="estabelecimento">
-            </div>
-            <div class="mb-3">
-                <label for="cnpj" class="form-label">CNPJ do Estabelecimento</label>
-                <input type="text" class="form-control" id="cnpj">
-            </div>
-            <div class="mb-5">
-                <label for="endereco" class="form-label">Endereço do Estabelecimento</label>
-                <input type="text" class="form-control" id="endereco" name="endereco">
-            </div>
-            <div class="" id="botao">
-                <button type="reset" class="btn btn-warning mx-3">Limpar Campos</button>
-                <button type="button" class="btn btn-dark mx-3">Cadastrar</button>
-            </div>
-        </form>
-    </div>
-    <div style="background-color: #cc2222;" class="container-fluid pt-4 py-2 pb-3 px-sm-5">
-        <h3 class="h3 text-center mt-2">SOLICITE SUA COLETA</h3>
-        <form class="mx-md-3">
-            <div class="form-group">
-                <label for="estabelecimento2" class="text-white">Nome do Estabelecimento</label>
-                <input type="text" class="form-control" id="estabelecimento2" value="">
-            </div>
-            <div class="form-group">
-                <label for="chave" class="text-white">Chave do Estabelecimento</label>
-                <input type="text" class="form-control" id="chave">
-            </div>
-            <div class="form-group">
-                <label for="endereco2" class="text-white">Endereço do Estabelecimento</label>
-                <input type="text" class="form-control" id="endereco2" value="">
-            </div>
+        <p class="px-4 text-justify">
+            2 - Leve a uma estação ou solicite a coleta
+            <a href="../html/pontos_entrega.html">Clique aqui</a> e verifique as estações de coleta mais próximas.
+        </p>
+        <p class="px-4 text-justify">
+            Ou
+            <br />
+            <br />
+            Solicite a coleta em seu endereço!
+            <br />
+            Como funciona?
+
+        </p>
+
+        <p class="px-4 text-justify">
+            Junte uma quantidade de itens, faça o cadastro dos itens <a href="../html/cadastro-parceiro.html">aqui</a>.
+
+        </p>
+        <p class="px-4 text-justify">
+            Quando alcançar a quantidade de itens necessários, você receberá um alerta com informações e algumas datas
+            para a retirada. Escolha a melhor data e confirme.
+
+        </p>
+        <p class="px-4 text-justify">
+            Separe seus itens (precisam estar limpos e separados). .
+        </p>
+        <p class="px-4 text-justify">
+
+            A coleta é realizada pela cooperativa parceira mais próxima
+
+        </p>
+
+        <p class="px-4 text-justify">
+            3 - Cadastre suas embalagens no <a href="../html/cadastro.html">site</a> e troque por pontos
+        </p>
+
+        <p class="px-4 text-justify mb-5" >
+            4 - Troque seus pontos por produtos em nossa <a href="../html/catalogo.html">vitrine</a>
+        </p>
+
+        <!-- <div style="background-color: #cc2222;" class="container-fluid pt-4 py-2 pb-3 px-sm-5">
+       
             <div class="text-center">
                 <button type="button" class="btn btn-dark rounded-pill mx-3">Solicitar Coleta</button>
             </div>
-        </form>
-    </div>
+     
+    </div> -->
 
-    <!-- Footer -->
-    <footer class="container-fluid pb-3 pt-1">
-        <section class="pl-2">
-            <div class="creditos d-flex justify-content-start pl">
-                <div class="texto1">
-                    <a href="https://www.grupopetropolis.com.br/"><img src="../images/logo.png" width="55" height="55" class="img-fluid align-top" alt=""></a>
-                    <p class="text-dark">Cervejaria Petropolis S/A - CNPJ 73.410.326/0055-53</p>
+        <!-- Footer -->
+        <footer class="container-fluid pb-3 pt-1">
+            <section class="pl-2">
+                <div class="creditos d-flex justify-content-start pl">
+                    <div class="texto1">
+                        <a href="https://www.grupopetropolis.com.br/"><img src="../images/logo.png" width="55"
+                                height="55" class="img-fluid align-top" alt=""></a>
+                        <p class="text-dark">Cervejaria Petropolis S/A - CNPJ 73.410.326/0055-53</p>
+                    </div>
                 </div>
+                <div class="redes-sociais">
+                    <a href="https://web.facebook.com/grupo.petropolis?_rdc=1&_rdr"><img src="../images/facebook1.png"
+                            alt="logo do Facebook"></a>
+                    <a href="https://www.instagram.com/grupo.petropolis/"><img src="../images/instagram.jpg"
+                            alt="logo do Instagram"></a>
+                    <a href="https://www.linkedin.com/company/grupo-petropolis/"><img src="../images/lin.png"
+                            alt="logo do Linkedin"></a>
+                </div>
+            </section>
+            <div class="creditos2 d-flex justify-content-center align-content-end">
+                <span class="pt-1 text-monospace">Desenvolvido por</span> <a
+                    href="https://github.com/renata-matsumoto/devgreen"><img src="../images/devgreen.png" alt="Devgreen"
+                        width="180"></a>
             </div>
-            <div class="redes-sociais">
-                <a href="https://web.facebook.com/grupo.petropolis?_rdc=1&_rdr"><img src="../images/facebook1.png"
-                        alt="logo do Facebook"></a>
-                <a href="https://www.instagram.com/grupo.petropolis/"><img src="../images/instagram.jpg"
-                        alt="logo do Instagram"></a>
-                <a href="https://www.linkedin.com/company/grupo-petropolis/"><img src="../images/lin.png"
-                        alt="logo do Linkedin"></a>
-            </div>
-        </section>
-        <div class="creditos2 d-flex justify-content-center align-content-end">
-            <span class="pt-1 text-monospace">Desenvolvido por</span> <a href="https://github.com/renata-matsumoto/devgreen"><img src="../images/devgreen.png" alt="Devgreen" width="180"></a>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Botao Top -->
-    <a href="#" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
-    <!-- FIM Botao Top -->
+        <!-- Botao Top -->
+        <a href="#" id="topBtn" title="Voltar ao Topo"><i class="h1 bi bi-arrow-up-square-fill"></i></a>
+        <!-- FIM Botao Top -->
 
 </body>
 
@@ -178,10 +185,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
+</script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+</script>
 <script src="../script.js"></script>
 
 <div vw class="enabled">
